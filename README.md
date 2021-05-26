@@ -1,7 +1,29 @@
-Corewar est un projet réalisé en groupe de 2 pendant mon cursus à 42 Lyon.
-Le projet est Corewar est le dernier projet (pré-stage) de la branche algorithme. Nous avons pour but de recoder:
--Un compilateur qui va transformer un fichier un champion (codé en pseudo-assembleur) en un fichier en binaire. La ligne de commande pour executer le compilateur est:
-./asm [La path du fichier .s du champion ...]. On a alors un nouveaux fichier .cor crée.
--Une machine virtuel qui va faire s'affronter avec un visualisateur (voir rêgles dans le sujet) plusieurs champions en prenant leurs fichiers binaires (crées par le compilateur au par avant). La ligne de commande pour executer la machine virtuel est:
-./corewar [La path du fichier .cor du champion ...]"
--Un champion codé en pseudo-assembleur.
+Corewar (42 School Project)
+A team project to build your own virtual machine (feat. @mshkliai and @AndreVero)
+
+Corewar
+
+This project can be broken down into three distinctive parts:
+
+The assembler: this is the program that will compile champions and translate them from the language written them in (assembly language) into “Bytecode”. Bytecode is a machine code, which will be directly interpreted by the virtual machine.
+The virtual machine: It’s the “arena” in which champions will be executed. It offers various functions, all of which will be useful for the battle of the champions. Obviously, the virtual machine should allow for numerous simultaneous processes.
+The champion: It's necessary to create a simple champion just to prove the program functionality.
+How to run:
+git clone https://github.com/anamsell/Corewar.git corewar
+cd corewar
+make
+./asm [file.s]
+./corewar [-v | -dump N] [-a] [-n N] <champion1.cor> <...>
+-v : Enables visualization
+-dump N : Dumps memory after N cycles
+-a : Prints output from 'aff' (Default is to hide it)
+-n N : Assigns id N to the player specified right after N
+Pay attention! [-v] has higher priority when is used with [-dump]
+
+Visualization
+Visualization is enabled using library. The native shell (for example, Terminal.app for macos) could show higher permormance than the third-party applications like iTerm. Colors may vary depend on your shell application settings.
+
+Champions
+You could get more champions by searching GitHub. For example, take a look here.
+
+Enjoy!
