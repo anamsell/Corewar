@@ -18,17 +18,25 @@ cd corewar
 make
 
 ./asm [file.s]
+
 ./corewar [-v | -dump N] [-a] [-n N] <champion1.cor> <...>
+
 -v : Enables visualization
+
 -dump N : Dumps memory after N cycles
+
 -a : Prints output from 'aff' (Default is to hide it)
+
 -n N : Assigns id N to the player specified right after N
+
 Pay attention! [-v] has higher priority when is used with [-dump]
 
 Visualization
+
 Visualization is enabled using library. The native shell (for example, Terminal.app for macos) could show higher permormance than the third-party applications like iTerm. Colors may vary depend on your shell application settings.
 
 Champions
+
 You could get more champions by searching GitHub. For example, take a look here.
 
 Enjoy!
