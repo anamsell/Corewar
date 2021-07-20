@@ -37,6 +37,6 @@ Visualization is enabled using library. The native shell (for example, Terminal.
 
 Champions
 
-You could get more champions by searching GitHub. For example, take a look here.
+You could get more champions by searching GitHub.
 
 Enjoy!
